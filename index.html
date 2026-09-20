@@ -361,7 +361,7 @@ input {
     transform: rotate(7deg);
 }
 
-.companion {
+.Partner {
 
     text-align: center;
 
@@ -372,7 +372,7 @@ input {
     line-height: 2;
 }
 
-.companion strong {
+.Partner strong {
 
     display: block;
 
@@ -1593,13 +1593,13 @@ input[type="file"] {
     </div>
 
 
-    <div class="companion">
+    <div class="Partner">
 
-        COMPANION
+        Partner
 
         <strong
             class="editable"
-            id="coverCompanion"
+            id="coverPartner"
         >
             RAZAEL
         </strong>
@@ -1684,17 +1684,17 @@ input[type="file"] {
             </div>
 
 
-            <!-- COMPANION -->
+            <!-- Partner -->
 
             <div class="detail">
 
                 <span class="detail-label">
-                    Companion
+                    Partner
                 </span>
 
                 <span
                     class="detail-value editable"
-                    id="companionValue"
+                    id="PartnerValue"
                 >
                     Razael
                 </span>
@@ -2140,7 +2140,7 @@ const defaultData = {
 
     name: "Riany",
 
-    companion: "Razael",
+    Partner: "Razael",
 
     validUntil: "Forever",
 
@@ -2290,17 +2290,17 @@ function renderText() {
     ).textContent = data.name;
 
     document.getElementById(
-        "companionValue"
-    ).textContent = data.companion;
+        "PartnerValue"
+    ).textContent = data.Partner;
 
     document.getElementById(
         "validValue"
     ).textContent = data.validUntil;
 
     document.getElementById(
-        "coverCompanion"
+        "coverPartner"
     ).textContent =
-        data.companion.toUpperCase();
+        data.Partner.toUpperCase();
 
     document.getElementById(
         "identityQuote"
@@ -2653,13 +2653,13 @@ document
 
 
 document
-    .getElementById("companionValue")
+    .getElementById("PartnerValue")
     .onclick = () =>
         editText(
             document.getElementById(
-                "companionValue"
+                "PartnerValue"
             ),
-            "companion"
+            "Partner"
         );
 
 
